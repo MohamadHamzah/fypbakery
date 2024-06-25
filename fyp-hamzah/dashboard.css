@@ -1,0 +1,81 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #1e1e1e, #121212);
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+}
+
+.admin-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 40px;
+  background-color: #2c2c2c;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+.admin-container:hover {
+  transform: translateY(-5px);
+}
+
+h1 {
+  text-align: center;
+  color: #ffa640;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #ff4081;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ff7c40;
+  transform: translateY(-2px);
+}
+
+section {
+  margin-top: 40px;
+}
+
+h2 {
+  color: #ffa640;
+  margin-bottom: 20px;
+}
+
+section#userManagement,
+section#orderProcessing,
+section#addProduct,
+section#deleteProduct,
+section#feedbackSupport,
+section#accessSystem {
+  background-color: #3a3a3a;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+section h2 {
+  margin-top: 0;
+}
+
+section p {
+  margin-bottom: 0;
+}

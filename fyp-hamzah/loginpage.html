@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eBakery Login</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="adminButtonContainer">
+      <button id="adminButton">Admin</button>
+    </div>
+    <div id="loginContainer" class="container">
+      <h2>Login</h2>
+      <form id="loginForm" action="login/login.php" method="POST">
+        <div class="form-group">
+          <label for="loginUsername">Username:</label>
+          <input type="text" id="loginUsername" name="username" required />
+        </div>
+        <div class="form-group">
+          <label for="loginPassword">Password:</label>
+          <input type="password" id="loginPassword" name="password" required />
+        </div>
+        <button type="submit">Login</button>
+        <span id="loginError" class="error"></span>
+      </form>
+      <p>Don't have an account? <a href="#" id="showSignup">Sign Up</a></p>
+    </div>
+
+    <div id="signupContainer" class="container" style="display: none">
+      <h2>Sign Up</h2>
+      <form id="signupForm" action="login/signup.php" method="POST">
+        <div class="form-group">
+          <label for="signupUsername">Username:</label>
+          <input type="text" id="signupUsername" name="username" required />
+        </div>
+        <div class="form-group">
+          <label for="signupPassword">Password:</label>
+          <input type="password" id="signupPassword" name="password" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="signupEmail" name="email" required />
+        </div>
+        <button type="submit">Sign Up</button>
+        <span id="signupError" class="error"></span>
+      </form>
+      <p>Already have an account? <a href="#" id="showLogin">Login</a></p>
+    </div>
+
+    <script src="login/login_script.js"></script>
+  </body>
+</html>

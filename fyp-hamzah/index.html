@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Bakery</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- feather icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    
+    <!-- Navbar start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">E-Bakery</a>
+
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact Us</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="search"><i data-feather="search"></i></a>
+        <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+        <a href="#" id="cake-menu"><i data-feather="menu"></i></a>
+      </div>
+
+      <div class="search-form" id="search-form">
+        <input type="text" placeholder="Search for cakes...">
+        <label for="search-submit"><i data-feather="search"></i></label>
+        <input type="submit" id="search-submit" style="display:none;">
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- Hero Section start-->
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>LET'S ENJOY</h1>
+        <h2>OUR <span>CAKE</span></h2>
+        <p>
+          "Life is short, eat the cake first!"
+        </p>
+        <a href="#" class="cta">ORDER & BUY NOW</a>
+      </main>
+    </section>
+    <!-- Hero Section end-->
+
+    <!--About Section start-->
+    <section id="about" class="about">
+      <h3><span>About</span>Us</h3>
+
+      <div class="row">
+        <div class="about-img">
+          <img src="img/aboutus.jpeg.jpg" alt="About Us" />
+        </div>
+        <div class="content">
+          <h4>Why Choose Us?</h4>
+          <p>
+            Indulge in irresistible delights crafted with love and expertise.
+          </p>
+          <p>
+            Choose us for our dedication to freshly baked goodness, 
+            a symphony of flavors, 
+            and a commitment to delighting your senses with every bite.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--About Section end-->
+
+
+      <!--Menu Section Start-->
+<section id="menu" class="menu">
+  <h3><span>Our</span> Menu</h3>
+  <p>"Savor the moments with our delectable menu."</p>
+  <div class="row">
+    <?php foreach ($menuItems as $item): ?>
+    <div class="menu-card" data-name="Cake1" data-price="99.99">
+      <img src="img/menu/1.jpg" alt="Cake 1">
+      <h4 class="menu-card-title">Cake1</h4>
+      <p class="menu-card-price">RM99.99</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="menu-card" data-name="Cake2" data-price="99.99">
+      <img src="img/menu/2.jpg" alt="Cake 2">
+      <h4 class="menu-card-title">Cake2</h4>
+      <p class="menu-card-price">RM99.99</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="menu-card" data-name="Cake3" data-price="99.99">
+      <img src="img/menu/3.jpg" alt="Cake 3">
+      <h4 class="menu-card-title">Cake3</h4>
+      <p class="menu-card-price">RM99.99</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="menu-card" data-name="Cake4" data-price="99.99">
+      <img src="img/menu/4.jpg" alt="Cake 4">
+      <h4 class="menu-card-title">Cake4</h4>
+      <p class="menu-card-price">RM99.99</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="menu-card" data-name="Cake5" data-price="99.99">
+      <img src="img/menu/5.jpg" alt="Cake 5">
+      <h4 class="menu-card-title">Cake5</h4>
+      <p class="menu-card-price">RM99.99</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="menu-card" data-name="Cake6" data-price="99.99">
+      <img src="img/menu/6.jpg" alt="Cake 6">
+      <h4 class="menu-card-title">Cake6</h4>
+      <p class="menu-card-price">RM99.99</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="menu-card" data-name="Cake7" data-price="99.99">
+      <img src="img/menu/7.jpg" alt="Cake 7">
+      <h4 class="menu-card-title">Cake7</h4>
+      <p class="menu-card-price">RM99.99</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="menu-card" data-name="Cake8" data-price="99.99">
+      <img src="img/menu/8.jpg" alt="Cake 8">
+      <h4 class="menu-card-title">Cake8</h4>
+      <p class="menu-card-price">RM99.99</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <?php endforeach; ?>
+  </div>
+</section>
+<!--Menu Section End-->
+    
+
+    <!--Contact Section Start-->
+    <section id="contact" class="contact">
+      <h3><span>Our</span>Contact</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Commodi corrupti hic incidunt inventore labore 
+        eaque.</p>
+    <div class="row">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15936.25104854131!2d101.53489115541988!3d3.0779178000000025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4da1316eb81b%3A0x23c6e1ed816957f4!2sManagement%20%26%20Science%20University%20(MSU)!5e0!3m2!1sen!2smy!4v1715722035300!5m2!1sen!2smy" 
+       allowfullscreen="" loading="lazy" 
+       referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+    
+
+    <form action="">
+      <div class="input-group">
+        <i data-feather="user"></i>
+        <input type="text" 
+        placeholder="E-Bakery.Sdn.Bhd.">
+      </div>
+      <div class="input-group">
+        <i data-feather="mail"></i>
+        <input type="text" 
+        placeholder="e-bakery@gmail.com">
+      </div>
+      <div class="input-group">
+        <i data-feather="phone"></i>
+        <input type="text" 
+        placeholder="+60 11 123456789">
+      </div>
+      <div class="input-group">
+        <i data-feather="message-circle"></i>
+        <textarea class= ch name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+      </div>
+    <button type="submit" class="btn">Send Message</button>
+     
+    </form>
+  </div>
+
+
+
+    <!--Contact Section End-->
+<!--Footer Section start-->
+<footer>
+  <div class="socials">
+<a href="#"><i data-feather="instagram"></i></a>
+<a href="#"><i data-feather="twitter"></i></a>
+<a href="#"><i data-feather="facebook"></i></a>
+
+
+  </div>
+
+<div class="links">
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#menu">Menu</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<div class="credit">
+  <p>Created by <a href="">Mohamad Hamzah</a>
+    Fyp2 2024</p>
+</div>
+</footer>
+
+
+<!-- Shopping Cart Modal -->
+<div id="shopping-cart-modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Shopping Cart</h2>
+    <div class="cart-items">
+      <!-- Cart items will be added here dynamically -->
+    
+    </div>
+    <div class="cart-total">Total: RM<span id="total-amount">0.00</span></div>
+
+    <button class="btn checkout-btn" id="checkout-btn">Checkout</button>
+  </div>
+</div>
+
+<!-- Payment Page -->
+<div id="payment-page" class="modal">
+  <div class="modal-content">
+    <h2>Payment</h2>
+    <div class="cart-details">
+      <h3>Items in Cart</h3>
+      <div class="cart-items">
+        <!-- Cart items will be added here dynamically -->
+      </div>
+      <div class="cart-total">Total: RM0.00</div>
+    </div>
+    <form action="process_payment.php" method="POST" class="billing-form">
+      <h3>Billing Address</h3>
+      <input type="text" name="full_name" placeholder="Full Name" required />
+      <input type="text" name="address" placeholder="Address" required />
+      <input type="text" name="city" placeholder="City" required />
+      <input type="text" name="postal_code" placeholder="Postal Code" required />
+      <input type="text" name="country" placeholder="Country" required />
+      <input type="hidden" name="items_ordered" id="items_ordered" required />
+      <input type="hidden" name="number_of_items" id="number_of_items" required />
+      <input type="hidden" name="total_payment" id="total_payment" required />
+      <h3>Payment Method</h3>
+      <select name="payment_method" required>
+          <option value="Credit Card">Credit Card</option>
+          <option value="PayPal">PayPal</option>
+          <option value="Bank Transfer">Bank Transfer</option>
+      </select>
+      <div class="payment-actions">
+          <button type="button" class="btn cancel-payment">Cancel</button>
+          <button type="submit" class="btn continue-payment">Continue</button>
+      </div>
+    </form>
+  </div>
+</div>    
+
+
+<!--Footer Section end-->
+    <!-- feather icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- my javascript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
