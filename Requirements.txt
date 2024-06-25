@@ -1,6 +1,7 @@
 Requirements
 
 XAMPP (Apache, MySQL, PHP)
+VisualStudio
 Modern web browser (Chrome, Firefox, Edge)
 
 
