@@ -20,3 +20,6 @@ FYPBakery is an online bakery platform that allows customers to browse menus, pl
 1. Clone the repository into your `htdocs` directory:
    ```sh
    git clone https://github.com/MohamadHamzah/fypbakery.git
+2. Start the XAMPP server and make sure Apache is running.
+
+3. Access the website by navigating to http://localhost/fypbakery/loginpage.html.
