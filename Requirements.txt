@@ -1,0 +1,56 @@
+Requirements
+
+XAMPP (Apache, MySQL, PHP)
+Modern web browser (Chrome, Firefox, Edge)
+
+
+### REQUIREMENTS.md
+
+```markdown
+# Requirements for FYPBakery
+
+## Functional Requirements
+
+### User Registration and Authentication
+- Users should be able to register and log in securely.
+- Differentiate between staff, students, and other stakeholders for personalized experiences.
+
+### Menu Browsing and Selection
+- Customers should be able to browse the menus of participating bakeries.
+- Customers should be able to view item details and add them to the cart.
+
+### Order Placement
+- Customers should be able to place orders by adding items to their cart.
+
+### Menu Management for Admins
+
+
+### Secure Payment Integration
+- Integrate secure payment methods for online transactions.
+- Support various payment options like debit cards and credit cards.
+
+### User Profile Management
+- Customers should be able to manage their profiles, including delivery addresses, personal information, and order history.
+
+### Comments
+- Customers should be able to rate and review their orders to improve service quality.
+
+### Admin Dashboard
+- Provide a dashboard for admins to manage users, orders, products, and view analytics.
+
+## Non-Functional Requirements
+
+### Performance
+- The system should ensure quick response times for actions such as menu browsing and order placement.
+
+### Security
+- Use encryption to secure customer data during transfer and storage.
+- Implement password change mechanisms requiring the existing password for verification.
+
+### Usability
+- Ensure a smooth and user-friendly interface for both customers and admins.
+
+### Platform Compatibility
+- The system should be accessible via modern web browsers and  platform dependent.
+
+
